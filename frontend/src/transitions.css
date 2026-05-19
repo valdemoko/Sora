@@ -1,0 +1,55 @@
+/* Transiciones */
+/*Efecto de inicio de sesion y registro*/
+.auth-split-container.is-transitioning {
+  max-width: calc(100vw - 80px);
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  border-radius: var(--radius-2xl);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-split-container.is-transitioning .auth-panel {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.auth-page-modern.is-transitioning .auth-video-full {
+  opacity: 0.1;
+  transition: opacity 1s ease;
+}
+
+/*Efecto de cierre de sesion*/
+.app-root.is-exiting {
+  background: #464646;
+  transition: background 0.8s ease;
+}
+
+.app-root.is-exiting .glass-container {
+  max-width: 1000px !important;
+  width: 90% !important;
+  height: 600px !important;
+  border-radius: 40px !important;
+  background: rgba(18, 18, 22, 0.4) !important;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-root.is-exiting .app-main-content {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: all 0.5s ease;
+}
+
+.auth-page-modern {
+  animation: authFadeIn 1s ease forwards;
+}
+
+@keyframes authFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

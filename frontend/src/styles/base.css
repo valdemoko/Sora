@@ -1,0 +1,68 @@
+:root {
+  --bg-deep: #3f3f3f;
+  --accent: #22d3ee;
+  --accent-rgb: 34, 211, 238;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+
+  --glass-opacity-strong: 0.05;
+  --glass-opacity-medium: 0.03;
+  --glass-opacity-soft: 0.02;
+  --glass-opacity-border: 0.1;
+  --glass-opacity-hover: 0.1;
+
+  --glass-fill: rgba(255, 255, 255, var(--glass-opacity-strong));
+  --glass-fill-hover: rgba(255, 255, 255, var(--glass-opacity-hover));
+  --glass-border: rgba(255, 255, 255, var(--glass-opacity-border));
+  --accent-glow: rgba(var(--accent-rgb), 0.4);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 40px;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-premium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-sm: 0.9rem;
+  --font-md: 0.95rem;
+
+  --shadow-deep: 0 40px 100px rgba(0, 0, 0, 0.6);
+  --blur-std: blur(40px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-deep);
+  color: var(--text);
+  min-height: 100vh;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.glass-container,
+.glass-card,
+.side-panel-card,
+.feed-card,
+.conversations-list-container,
+.settings-sidebar-frame,
+.settings-nav-item-wrap,
+.nav-square-btn,
+.nav-home-btn,
+.nav-bell-btn,
+.btn-glass,
+.feed-action-btn,
+.btn-like-svg,
+.btn-add-square {
+  background: var(--glass-fill);
+  backdrop-filter: var(--blur-std);
+  -webkit-backdrop-filter: var(--blur-std);
+  border: 1px solid var(--glass-border);
+}

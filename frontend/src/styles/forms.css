@@ -1,0 +1,223 @@
+.input-glass-std,
+.composer-input,
+.conv-search-input,
+.photo-side-form input,
+.home-main-search input {
+  outline: none;
+}
+
+.input-glass-std {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.input-glass-std:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.photo-side-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.photo-side-form input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.photo-side-form input:focus {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.home-main-search {
+  width: 100%;
+  background: rgba(18, 18, 22, 0.4);
+  border: 1px solid var(--glass-border);
+  padding: 20px 30px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: var(--blur-std);
+  -webkit-backdrop-filter: var(--blur-std);
+  box-shadow: var(--shadow-deep);
+  position: relative;
+  z-index: 2000;
+}
+
+.home-main-search:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-main-search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.message-composer-wrap {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.composer-form-glass {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.composer-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 12px 0;
+}
+
+.conv-search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+.auth-input-group {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.auth-field-underline {
+  width: 100%;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 12px 0 !important;
+  transition: all 0.3s ease;
+}
+
+.auth-field-underline:focus-within {
+  border-bottom-color: var(--accent) !important;
+}
+
+.auth-field-underline input {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #fff !important;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  background-color: transparent !important;
+}
+
+.upload-dropzone {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--radius-xl);
+  border: 2px dashed var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.upload-dropzone:hover {
+  border-color: var(--accent) !important;
+  background: rgba(34, 211, 238, 0.05) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.group-avatar-upload-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.group-avatar-upload-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--glass-fill);
+  border: 2px dashed var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.group-avatar-upload-circle:hover {
+  border-color: var(--accent);
+  background: rgba(34, 211, 238, 0.05);
+  transform: scale(1.02);
+}
+
+.group-avatar-upload-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.group-avatar-upload-btn {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.group-avatar-upload-btn:hover {
+  opacity: 0.8;
+}
